@@ -1,0 +1,59 @@
+hosted_zone "closure.jp." do
+
+  rrset "mail.closure.jp.", "MX" do
+    ttl 300
+    resource_records "10 closure.jp."
+  end
+
+  rrset "closure.jp.", "A" do
+    ttl 300
+    resource_records "72.32.231.8"
+  end
+
+  rrset "jenkins.closure.jp.", "A" do
+    ttl 300
+    resource_records "219.94.223.100"
+  end
+
+  rrset "mail.closure.jp.", "A" do
+    ttl 300
+    resource_records "219.94.223.100"
+  end
+
+  rrset "*.mail.closure.jp.", "A" do
+    ttl 300
+    resource_records "219.94.223.100"
+  end
+
+  rrset "irc.closure.jp.", "A" do
+    ttl 300
+    resource_records "219.94.223.100"
+  end
+
+  rrset "minecraft.closure.jp.", "A" do
+    ttl 300
+    resource_records "49.212.150.165"
+  end
+
+  rrset "web.minecraft.closure.jp.", "A" do
+    ttl 300
+    resource_records "50.23.73.34"
+  end
+
+  rrset "wall.minecraft.closure.jp.", "A" do
+    ttl 300
+    resource_records "50.23.73.34"
+  end
+
+  rrset "profile.closure.jp.", "A" do
+    ttl 300
+    resource_records "184.73.237.244"
+  end
+
+  rrset "profile.closure.jp.", "TXT" do
+    ttl 300
+    resource_records '"google-site-verification=iSbD4cK8morYFRmoXEn6LkWC6tbgdfunh56ETJMLEZU"'
+  end
+
+end
+
