@@ -1,10 +1,9 @@
 language: ruby
 rvm:
 - 2.0.0
-env:
-  global:
-    - AWS_ACCESS_KEY_ID=AKIAIBD6L2JBW743RTFA
-    - secure: o7cdqctbH6kgO1a3LSizoC7Wc4ShwNZQDUUurQZy0dkJ9pUD124wTLP34S0dG0uVlqnQq4v8ImJ0Y2q8Ow7ugFiZQeqiI/V/68kYATe0WMw3cMPxGsl6RFTYYg+HAIi1e7xhHOrGPuM+weANI3Xvbyi8OrKhdZsm8DE260ocMRc=
 script:
-- "bundle exec roadwork -t"
-- "bundle exec roadwork -a"
+- bundle exec roadwork -t
+- bundle exec roadwork -a
+env:
+  - AWS_ACCESS_KEY_ID=AKIAIBD6L2JBW743RTFA
+  - secure: Nci/ufgrjCz9ol7tiQnFN/8cM3mR4YumVtKOXovgmp78P1FgzId9DI+wZNe1yHTWXLpsrQD0T8kX9WN6RWEo3SD4/aAK1DvQWikJlQIAR1D1I8mDlfvGMo+Npnvfu6Z8chndW3tjYPQOxF4xlfu9kI88njzYSEc2KXO8TSzXOak=
