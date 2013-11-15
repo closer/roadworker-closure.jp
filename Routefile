@@ -5,9 +5,8 @@ hosted_zone "closure.jp." do
     resource_records "10 closure.jp."
   end
 
-  rrset "closure.jp.", "CNAME" do
-    ttl 300
-    resource_records "closure-jp.s3-website-ap-northeast-1.amazonaws.com"
+  rrset "closure.jp.", "A" do
+    dns_name "s3-website-ap-northeast-1.amazonaws.com"
   end
 
   rrset "jenkins.closure.jp.", "A" do
