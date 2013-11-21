@@ -1,8 +1,8 @@
 hosted_zone "closure.jp." do
 
-  rrset "mail.closure.jp.", "MX" do
+  rrset "closure.jp.", "MX" do
     ttl 300
-    resource_records "10 closure.jp."
+    resource_records "10 mail.closure.jp."
   end
 
   rrset "closure.jp.", "A" do
